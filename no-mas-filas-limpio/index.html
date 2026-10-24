@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>No más filas | Trámites públicos en Colombia</title>
+  <!-- Conecta el archivo de estilos que está en la carpeta CSS -->
+  <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+<body>
+
+  <!-- ========== ENCABEZADO ========== -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-icon">📋</span>
+        <span class="logo-text">No más filas</span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#tramites">Trámites</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== SECCIÓN PRINCIPAL (HERO) ========== -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Haz tus trámites sin perder tiempo</h1>
+      <p class="hero-subtitle">
+        Consulta requisitos, pasos y enlaces oficiales de los trámites públicos más comunes en Colombia.
+        Todo en un solo lugar, con lenguaje sencillo.
+      </p>
+      <a href="#tramites" class="btn btn-primary">Ver trámites</a>
+    </div>
+  </section>
+
+  <!-- ========== CÓMO FUNCIONA ========== -->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2>Cómo funciona</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-number">1</div>
+          <h3>Elige el trámite</h3>
+          <p>Busca por categoría: identificación, salud, movilidad, impuestos y más.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">2</div>
+          <h3>Revisa los pasos</h3>
+          <p>Lee la guía clara, costos, tiempos y documentos que necesitas.</p>
+        </div>
+        <div class="card">
+          <div class="card-number">3</div>
+          <h3>Usa el checklist</h3>
+          <p>Marca lo que ya tienes y ve exactamente qué te falta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LISTA DE TRÁMITES ========== -->
+  <section id="tramites" class="section section-alt">
+    <div class="container">
+      <h2>Trámites más consultados</h2>
+      <p class="section-desc">Selecciona una categoría o un trámite para ver la guía completa.</p>
+
+      <!-- Botones para filtrar por categoría -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="identificacion">Identificación</button>
+        <button class="filter-btn" data-filter="salud">Salud</button>
+        <button class="filter-btn" data-filter="movilidad">Movilidad</button>
+        <button class="filter-btn" data-filter="impuestos">Impuestos</button>
+      </div>
+
+      <!-- Aquí JavaScript inserta las tarjetas de trámites -->
+      <div class="tramites-grid" id="tramites-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== VENTANA EMERGENTE (MODAL) ========== -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" title="Cerrar">&times;</button>
+      <h2 id="modal-titulo"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ========== PIE DE PÁGINA ========== -->
+  <footer id="contacto" class="footer">
+    <div class="container">
+      <p><strong>No más filas</strong> — Orientación ciudadana sobre trámites públicos en Colombia.</p>
+      <p class="footer-note">Esta es una herramienta de orientación. Siempre verifica la información en los portales oficiales del Estado.</p>
+      <p class="footer-copy">Prototipo académico · 2026</p>
+    </div>
+  </footer>
+
+  <!-- Conecta el archivo JavaScript que está en la carpeta JAVA -->
+  <script src="JAVA/script.js"></script>
+</body>
+</html>
